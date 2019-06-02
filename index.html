@@ -19,9 +19,9 @@ git_status_develope_2017-8-17
     </body>
     <script type="text/javascript">
         var d = new Date();
-        var currentDate = d.getFullYear() + "년 " + ( d.getMonth() + 1 ) + "월 " + d.getDate() + "일";
-        var currentTime = d.getHours() + "시 " + d.getMinutes() + "분 " + d.getSeconds() + "초";
+        var currentDate = "Year: "+d.getFullYear() + "Month: "+( d.getMonth() + 1 ) + "Day(s): "+d.getDate();
+        var currentTime = "Hour(s): "+d.getHours() +"Minute(s): "+ d.getMinutes()  +"Second(s): "+ d.getSeconds();
         var result = document.getElementById("time-result");
-        result.innerHTML = "오늘 날짜는 " + currentDate + ", 시간은 " + currentTime + " 입니다.";
+        result.innerHTML = "Current Date is " + currentDate + ", Time is " + currentTime + ".";
     </script>
 </html>
